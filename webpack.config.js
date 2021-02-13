@@ -13,12 +13,23 @@ module.exports = {
   //target: temperary hot reload fix when using .browserslistrc
   target: target,
 
+  output: {
+    assetModuleFilename: "images/[name][ext][query]"
+  },
+
   module: {
     rules: [
       {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource"
+      },
+      {
         test: /\.s?css$/i,
         use: [
-          MiniCssExtractPlugin.loader, 
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {publicPath: "" }
+          }, 
           "css-loader", 
           "postcss-loader", 
           "sass-loader"
@@ -36,6 +47,7 @@ module.exports = {
 
   plugins: [new MiniCssExtractPlugin()],
 
+  // allow implicite extensions
   resolve: {
     extensions: [".js", ".jsx"]
   },
