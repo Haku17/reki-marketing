@@ -4,4 +4,11 @@ const newObject = {
   c: 3
 }
 
+const secondObject = {
+  ...newObject,
+  d: 4,
+  b: 10
+}
+
 console.log(newObject)
+console.log(secondObject)
