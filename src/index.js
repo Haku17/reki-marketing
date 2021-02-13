@@ -1,3 +1,6 @@
+import "./styles/index.scss"
+
+
 const newObject = {
   a: 1,
   b: 2,
