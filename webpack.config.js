@@ -13,7 +13,7 @@ if(process.env.NODE_ENV === 'production') {
 
 module.exports = {
   mode: mode,
-  //target: temperary hot reload fix when using .browserslistrc
+  //target: temporary hot reload fix when using .browserslistrc
   target: target,
 
   output: {

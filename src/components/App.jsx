@@ -1,22 +1,17 @@
+import Hero from "./Hero"
+import Showcase from './Showcase'
 import "../styles/index.scss"
-import Data from './data'
-import dragon from '../images/dragon.png'
-import piggy from '../images/piggy.svg'
-import laugh from '../images/laughing.gif'
+import Features from "./Features"
+import Contact from './Contact'
 
 const App = () => {
   return (
     <>
-      <section className="hero"></section>
-      <main>
-        <section>
-          <h1>Hi from React</h1>
-        </section>
-        <img src={dragon} alt="dragon" width="250"/>
-        <img src={piggy} alt="piggy" width="250"/>
-        <img src={laugh} alt="laught" width="250"/>
-        <Data />
-      </main>
+      <Hero />
+      <Showcase />
+      <Features />
+      <Showcase />
+      <Contact />
     </>
   )
 }

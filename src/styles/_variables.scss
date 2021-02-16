@@ -1,4 +1,9 @@
-:root {
-  --text: #222;
-}
-$bg: lime;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$primary-font: 'Roboto', sans-serif;
+
+$dark-grey: #202427;
+$grey: #363F49;
+
+$background-blue:#F5FBFD;
+$button-blue: #0076BF;
