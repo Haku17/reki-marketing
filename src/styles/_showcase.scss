@@ -1,3 +1,26 @@
-.showcase {
+.showcase__inner {
+  width:100%;
   display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.showcase__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left:40px;
+}
+
+.showcase__heading {
+  margin-bottom: 32px;
+}
+
+.showcase__ul {
+  margin:0;
+  line-height: 60px;
+}
+
+.showcase__footer {
+  list-style-type: none;
 }

@@ -1,7 +1,31 @@
+@use "variables" as v;
+
 .hero {
   background: url("../images/Ipads.png");
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  min-height: 900px;
+  min-height: 850px;
+}
+
+.hero__logo {
+  margin: 48px 0 0 0;
+}
+
+.hero__header {
+  margin: 120px 0 0 0;
+}
+
+.hero__textbox {
+  margin-left: 64px;
+}
+
+.hero__subheader {
+  margin: 24px 0 40px 0;
+}
+
+.hero__subheader > p {
+  margin:0;
+  line-height: 38px;
+  color: v.$grey;
 }

@@ -3,18 +3,22 @@ import chart from '../images/Reki-charts.png';
 const Showcase = () => {
   return (
     <div className="showcase">
-      <div className="showcase__postition">
-        <img src={chart} alt="Chart View"/>
-      </div>
-      <div className="showcase__postition">
-        <h3>Everything you need, all in one place</h3>
-        <ul>
-          <li>Admin control panel</li>
-          <li>Dynamic data tables</li>
-          <li>Customizable charts</li>
-          <li>Data security</li>
-        </ul>
-        <p>... discover even more features below!</p>
+      <div className="container">
+        <div className="showcase__inner">
+          <div className="showcase__image">
+            <img src={chart} alt="Chart View"/>
+          </div>
+          <div className="showcase__list">
+            <h3 className="heading showcase__heading">Everything you need, all in one place</h3>
+            <ul className="showcase__ul">
+              <li className="text">Admin control panel</li>
+              <li className="text">Dynamic data tables</li>
+              <li className="text">Customizable charts</li>
+              <li className="text">Data security</li>
+              <li className="text showcase__footer">... discover even more features below!</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   )

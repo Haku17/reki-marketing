@@ -5,18 +5,75 @@ body {
   font-size: 26px;
   font-family: variables.$primary-font;
   color:variables.$dark-grey;
-}
-
-button {
-  font-size: 1.5rem;
+  box-sizing: border-box;
 }
 
 .container {
   width:100%;
   max-width: 1440px;
+  margin: 0 auto;
+  padding:0 80px;
+  box-sizing: border-box;
 }
 
 .container__full {
   width: 100%;
   height: auto;
+}
+
+.heading--main {
+  font-size: 48px;
+  font-weight: 700;
+  color: variables.$dark-grey;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: variables.$dark-grey;
+}
+
+.heading--mini {
+  font-size: 20px;
+  font-weight: 700;
+  color: variables.$grey;
+}
+
+.text--main {
+  font-size: 24px;
+  color: variables.$grey;
+}
+
+.text {
+  font-size: 20px;
+  color: variables.$grey;
+}
+
+.button {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 23px 24px;
+  background-color: variables.$button-blue;
+  color:#fff;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  border:none;
+  border-radius: 4px;
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.05);
+  cursor:pointer;
+  transition: ease background-color 200ms;
+  &:hover {
+    background-color: darken(variables.$button-blue, 10%);
+  }
+
+  img {
+    margin-left: 10px;
+  }
+}
+
+.invisible {
+  visibility: hidden;
 }

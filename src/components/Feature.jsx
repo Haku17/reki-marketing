@@ -5,8 +5,8 @@ const Feature = ({header, body, img, imgalt}) => {
         <img className="feature__icon" src={img} alt="imgalt"/>
       </div>
       <div>
-        <h3>{header}</h3>
-        <p>{body}</p>
+        <h3 className="heading--mini">{header}</h3>
+        <p className="text">{body}</p>
       </div>
     </div>
   )
