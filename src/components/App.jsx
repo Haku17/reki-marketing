@@ -1,8 +1,11 @@
 import Hero from "./Hero"
 import Showcase from './Showcase'
-import "../styles/index.scss"
 import Features from "./Features"
+import What from './What'
+import Why from './Why'
+import Who from './Who'
 import Contact from './Contact'
+import "../styles/index.scss"
 
 const App = () => {
   return (
@@ -10,7 +13,9 @@ const App = () => {
       <Hero />
       <Showcase />
       <Features />
-      <Showcase />
+      <What />
+      <Why />
+      <Who />
       <Contact />
     </>
   )

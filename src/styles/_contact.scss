@@ -57,6 +57,11 @@
   display:flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 48px;
+
+  p {
+    margin:0;
+  }
 }
 
 .contact__footer p:first-child {
