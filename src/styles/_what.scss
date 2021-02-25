@@ -1,10 +1,101 @@
+@use "mixins";
+
+.what {
+  margin: 80px 0;
+  @include mixins.for-small {
+    margin: 40px 0;
+  }
+  @include mixins.for-medium {
+    margin: 40px 0;
+  }
+  @include mixins.for-large {
+    margin: 40px 0;
+  }
+}
+
+.what .container {
+  padding: 0 15px 0 50px;
+  @include mixins.for-small {
+    padding:0 5px;
+  }
+  @include mixins.for-medium {
+    padding:0 15px;
+  }
+  @include mixins.for-large {
+    padding:0 50px 0 50px;
+  }
+  @include mixins.for-xlarge {
+    padding:0 15px 0 50px;
+  }
+}
+
 .what__box {
   width:100%;
   display:flex;
   align-items: center;
   justify-content:flex-start;
+  @include mixins.for-small {
+    flex-direction: column;
+  }
+  @include mixins.for-medium {
+    flex-direction: column;
+  }
+  @include mixins.for-large {
+    flex-direction: column;
+  }
 }
 
 .what__text {
-  width:50%;
+  width:45%;
+  @include mixins.for-small {
+    width: 100%;
+    padding: 0 19px;
+    box-sizing: border-box;
+  }
+  @include mixins.for-medium {
+    width: 100%;
+    padding: 0 19px;
+    box-sizing: border-box;
+  }
+  @include mixins.for-large {
+    width: 100%;
+  }
+  @include mixins.for-xlarge {
+    width: 45%;
+  }
+}
+
+.what__image {
+  width:55%;
+  @include mixins.for-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  @include mixins.for-medium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  @include mixins.for-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  img {
+    width:100%;
+    @include mixins.for-small {
+      width: 100%;
+    }
+    @include mixins.for-medium {
+      width: 100%;
+    }
+    @include mixins.for-large {
+      width: auto;
+    }
+  }
 }

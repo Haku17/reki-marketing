@@ -1,3 +1,5 @@
+@use "mixins";
+
 .features {
   background-color: #F5FBFD;
   padding: 2rem 0;
@@ -8,8 +10,30 @@
   display:flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  @include mixins.for-small {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include mixins.for-medium {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include mixins.for-large {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .features__header {
   text-align: center;
+  
+  @include mixins.for-small {
+    margin:0 0 2rem 0;
+  }
+  @include mixins.for-medium {
+    margin:0 0 2rem 0;
+  }
+  @include mixins.for-large {
+    margin:0 0 2rem 0;
+  }
 }

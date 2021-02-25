@@ -1,19 +1,37 @@
 @use "variables";
+// @mixin for-large-test {
+//   @media(min-width:555px){
+//     @content;
+//   }
+// }
+@use "mixins";
 
 body {
   margin: 0;
-  font-size: 26px;
+  font-size: 16px;
   font-family: variables.$primary-font;
-  color:variables.$dark-grey;
+  color: variables.$dark-grey;
   box-sizing: border-box;
 }
 
 .container {
-  width:100%;
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding:0 80px;
+  padding: 0 80px;
   box-sizing: border-box;
+  @include mixins.for-small {
+    padding: 0 5px;
+  }
+  @include mixins.for-medium {
+    padding: 0 15px;
+  }
+  @include mixins.for-large {
+    padding: 0 30px;
+  }
+  @include mixins.for-xlarge {
+    padding: 0 50px;
+  }
 }
 
 .container__full {
@@ -25,45 +43,89 @@ body {
   font-size: 48px;
   font-weight: 700;
   color: variables.$dark-grey;
+  @include mixins.for-small {
+    font-size: 24px;
+  }
+  @include mixins.for-medium {
+    font-size:24px;
+  }
+  @include mixins.for-large {
+    font-size:48px;
+  }
+  @include mixins.for-xlarge {
+    font-size:48px;
+  }
 }
 
 .heading {
   font-size: 28px;
   font-weight: 700;
   color: variables.$dark-grey;
+  @include mixins.for-small {
+    font-size: 18px;
+  }
+  @include mixins.for-medium {
+    font-size: 18px;
+  }
 }
 
 .heading--mini {
   font-size: 20px;
   font-weight: 700;
   color: variables.$grey;
+  @include mixins.for-small {
+    font-size: 18px;
+  }
+  @include mixins.for-medium {
+    font-size: 18px;
+  }
 }
 
 .text--main {
   font-size: 24px;
   color: variables.$grey;
+  @include mixins.for-small {
+    font-size: 18px;
+  }
+  @include mixins.for-medium {
+    font-size: 18px;
+  }
+  @include mixins.for-large {
+    font-size: 24px;
+  }
+  @include mixins.for-xlarge {
+    font-size: 24px;
+  }
 }
 
 .text {
   font-size: 18px;
   color: variables.$grey;
+  line-height: 28px;
+
+  @include mixins.for-small {
+    font-size: 16px;
+  }
+  @include mixins.for-medium {
+    font-size: 16px;
+  }
 }
 
 .button {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 23px 24px;
   background-color: variables.$button-blue;
-  color:#fff;
+  color: #fff;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
-  border:none;
+  border: none;
   border-radius: 4px;
   box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.05);
-  cursor:pointer;
+  cursor: pointer;
   transition: ease background-color 200ms;
   &:hover {
     background-color: darken(variables.$button-blue, 10%);

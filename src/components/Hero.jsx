@@ -11,10 +11,10 @@ const Hero = () => {
             Data management for <br /> modern associations
           </h1>
           <div className="hero__subheader">
-            <p className="text-main">
+            <p className="text--main">
               We empower you to take control of your data.
             </p>
-            <p className="text-main">View, collect and edit data easily</p>
+            <p className="text--main">View, collect and edit data easily</p>
           </div>
           <button className="button">
             Lets chat <img src={arrow} alt="" />

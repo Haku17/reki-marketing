@@ -1,3 +1,30 @@
+@use "mixins";
+
+.who {
+  margin-bottom: 80px;
+  @include mixins.for-small {
+    margin-bottom: 40px;
+  }
+  @include mixins.for-medium {
+    margin-bottom: 40px;
+  }
+  @include mixins.for-large {
+    margin-bottom: 40px;
+  }
+}
+
+.who .container {
+  @include mixins.for-small {
+    padding: 0 24px;
+  }
+  @include mixins.for-medium {
+    padding: 0 24px;
+  }
+  @include mixins.for-large {
+    padding: 0 50px;
+  }
+}
+
 .who__box {
   display:flex;
   flex-direction: column;

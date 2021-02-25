@@ -6,9 +6,10 @@ const What = () => {
       <div className="container">
         <div className="what__box">
           <div className="what__text">
-            <h3 className="heading">what</h3>
-            <p className="text">Are you an association that handles a lot of data and is looking for a better system to manage all of it? Is a lot of your time spent entering data into Excel or creating spreadsheets by hand? Reki is a data management system designed specifically for the needs of Finnish associations to automate these common tasks. Reki handles all of the data related tasks allowing you to get back to doing what your association does best.</p>
-            <p className="text">All associations are different, with different needs, members, and data structures. That is why Reki is built in a customizable way so that the system will work best for you. We will work closely together to refine your workflow and save your time, all while giving your members new benefits such as custom data tables and charts.</p>
+            <h3 className="heading">Data management modernized</h3>
+            <p className="text">Reki is a data management system for associations to automate common tasks. It lives on the web so you can use it wherever you have internet access. There are two sides to our system:</p>
+            <p className="text">The first is the admin control panel. Here you have complete control over your system, the data, and all your users. You can add users, change permissions, view statistics, send emails, and more!</p>
+            <p className="text">The other side is for your members. They can create custom tables and charts, download Excels of tables, and use our easy upload system. They can choose to upload from our Excel templates, fill a form manually, or even send custom Excels!</p>
           </div>
           <div className="what__image">
             <img src={rekiTable} alt="Reki Table"></img>

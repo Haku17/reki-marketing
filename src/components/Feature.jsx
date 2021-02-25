@@ -1,10 +1,12 @@
-const Feature = ({header, body, img, imgalt}) => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+const Feature = ({header, body, img}) => {
   return (
     <div className="feature">
-      <div>
-        <img className="feature__icon" src={img} alt="imgalt"/>
+      <div className="feature__icon">
+        <FontAwesomeIcon icon={img} />
       </div>
-      <div>
+      <div className="feature__card">
         <h3 className="heading--mini feature__header">{header}</h3>
         <p className="text feature__body">{body}</p>
       </div>

@@ -1,8 +1,18 @@
 @use "variables";
+@use "mixins";
 
 .contact {
   padding-top:70px;
   background-color: variables.$background-blue;
+  @include mixins.for-small {
+    padding-top: 40px;
+  }
+  @include mixins.for-medium {
+    padding-top: 40px;
+  }
+  @include mixins.for-large {
+    padding-top: 40px;
+  }
 }
 
 .contact__box {
@@ -17,6 +27,19 @@
   background-color: #fff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
+  @include mixins.for-small {
+    width: 100%;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+  @include mixins.for-medium {
+    width: 100%;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+  @include mixins.for-large {
+    width: 100%;
+  }
 }
 
 .contact__heading {
@@ -27,10 +50,37 @@
   margin: 32px 0 44px 0;
 }
 
+.contact__br {
+  display:none;
+  @include mixins.for-small {
+    display:block;
+  }
+  @include mixins.for-medium {
+    display:block;
+  }
+  @include mixins.for-large {
+    display:block;
+  }
+}
+
 .contact__form {
   display:flex;
   justify-content: center;
   align-items: flex-end;
+  @include mixins.for-small {
+    flex-direction: column;
+    align-items: stretch;
+    width:100%;
+    padding: 0 24px;
+    box-sizing:border-box;
+  }
+  @include mixins.for-medium {
+    flex-direction: column;
+    align-items: stretch;
+    width:100%;
+    padding: 0 24px;
+    box-sizing:border-box;
+  }
 }
 
 .contact__input {
@@ -40,16 +90,38 @@
   justify-content: flex-end;
 
   input {
+    min-width:348px;
     height: 64px;
     background-color:#F6F6F6;
     border:none;
     border-radius: 4px;
     margin:16px 24px 0 0;
+    font-size:18px;
+    color: variables.$dark-grey;
+    padding-left:16px;
+    @include mixins.for-small {
+      width:100%;
+      box-sizing: border-box;
+      margin-bottom:16px;
+      min-width:unset;
+    }
+    @include mixins.for-medium {
+      width:100%;
+      box-sizing: border-box;
+      margin-bottom:16px;
+      min-width:unset;
+    }
   }
   label {
     font-weight:700;
     font-size: 18px;
     color:#878A8C;
+    @include mixins.for-small {
+      font-size: 16px;
+    }
+    @include mixins.for-medium {
+      font-size: 16px;
+    }
   }
 }
 
@@ -58,6 +130,14 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 48px;
+  @include mixins.for-small {
+    flex-direction: column-reverse;
+    padding-bottom: 24px;
+  }
+  @include mixins.for-medium {
+    flex-direction: column-reverse;
+    padding-bottom: 24px;
+  }
 
   p {
     margin:0;
@@ -66,8 +146,26 @@
 
 .contact__footer p:first-child {
   margin-left:80px;
+  @include mixins.for-small {
+    margin-left: 0;
+    margin-top: 48px;
+  }
+  @include mixins.for-medium {
+    margin-left: 0;
+    margin-top: 48px;
+  }
 }
 
 .contact__footer p:nth-child(2) {
   margin:auto;
+}
+
+.contact__footer p:last-child {
+  margin-right:80px;
+  @include mixins.for-small {
+    display: none;
+  }
+  @include mixins.for-medium {
+    display: none;
+  }
 }

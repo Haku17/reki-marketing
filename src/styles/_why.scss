@@ -1,10 +1,80 @@
+@use "mixins";
+
+.why {
+  margin-bottom: 80px;
+  @include mixins.for-small {
+    margin-bottom: 40px;
+  }
+  @include mixins.for-medium {
+    margin-bottom: 40px;
+  }
+  @include mixins.for-large {
+    margin-bottom: 40px;
+  }
+}
+
+.why .container {
+  @include mixins.for-small {
+    padding: 0;
+  }
+  @include mixins.for-medium {
+    padding: 0;
+  }
+  @include mixins.for-large {
+    padding: 0;
+  }
+}
+
 .why__box {
   width:100%;
   display:flex;
   align-items: center;
   justify-content: flex-start;
+  @include mixins.for-small {
+    flex-direction: column-reverse ;
+  }
+  @include mixins.for-medium {
+    flex-direction: column-reverse ;
+  }
+  @include mixins.for-large {
+    flex-direction: column-reverse ;
+  }
 }
 
 .why__text {
   width:50%;
+  padding:0 80px;
+  box-sizing: border-box;
+  @include mixins.for-small {
+    width:100%;
+    padding: 0 24px;
+  }
+  @include mixins.for-medium {
+    width:100%;
+    padding: 0 24px;
+  }
+  @include mixins.for-large {
+    width:100%;
+    padding: 0 50px;
+  }
+}
+
+.why__image {
+  width:50%;
+  max-width: 558px;
+  @include mixins.for-small {
+    width:100%;
+    margin-top: 14px;
+  }
+  @include mixins.for-medium {
+    width:100%;
+    margin-top: 14px;
+  }
+  @include mixins.for-large {
+    width:100%;
+    margin-top: 14px;
+  }
+  img {
+    width:100%;
+  }
 }

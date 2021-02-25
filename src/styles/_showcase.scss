@@ -1,8 +1,63 @@
+@use "mixins";
+
 .showcase__inner {
   width:100%;
   display:flex;
   flex-direction: row;
   justify-content: flex-start;
+  @include mixins.for-small {
+    flex-direction: column-reverse;
+  }
+  @include mixins.for-medium {
+    flex-direction: column-reverse;
+  }
+  @include mixins.for-large {
+    flex-direction: column-reverse;
+  }
+  @include mixins.for-xlarge {
+    flex-direction: row;
+  }
+}
+
+.showcase__image {
+  width:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mixins.for-small {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  @include mixins.for-medium {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  @include mixins.for-large {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  img {
+    width: 100%;
+    
+    @include mixins.for-small {
+      width: 100%;
+    }
+    @include mixins.for-medium {
+      width: 100%;
+    }
+    @include mixins.for-large {
+      width: auto;
+    }
+  }
 }
 
 .showcase__list {
@@ -10,15 +65,50 @@
   flex-direction: column;
   justify-content: center;
   margin-left:40px;
+
+  @include mixins.for-small {
+    margin:0;
+  }
+  @include mixins.for-medium {
+   margin:0;
+  }
+  @include mixins.for-large {
+    width: 690px;
+    margin:0 auto;
+    padding-left: 50px;
+  }
 }
 
 .showcase__heading {
   margin-bottom: 32px;
+
+  @include mixins.for-small {
+    margin-bottom: 20px;
+  }
+  @include mixins.for-medium {
+    margin-bottom: 20px;
+  }
 }
 
 .showcase__ul {
   margin:0;
-  line-height: 60px;
+  .text {
+    line-height: 60px;
+    
+    @include mixins.for-small {
+      line-height: 48px;
+    }
+    @include mixins.for-medium {
+      line-height: 48px;
+    }
+    @include mixins.for-large {
+      line-height: 48px;
+    }
+    @include mixins.for-xlarge {
+      line-height: 48px;
+    }
+  }
+  
 }
 
 .showcase__footer {

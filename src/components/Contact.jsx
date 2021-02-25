@@ -7,7 +7,8 @@ const Contact = () => {
         <div className="contact__box">
           <h3 className="heading contact__heading">Contact us</h3>
           <p className="text contact__subheading">
-            Start doing business better today! Tell us how to reach you and
+            Start doing business better today! <br className="contact__br"/>
+            Leave us your email and
             we'll contact you.
           </p>
           <form className="contact__form">

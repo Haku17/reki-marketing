@@ -14,7 +14,7 @@ const Showcase = () => {
               <li className="text">Admin control panel</li>
               <li className="text">Dynamic data tables</li>
               <li className="text">Customizable charts</li>
-              <li className="text">Data security</li>
+              <li className="text">Notification system</li>
               <li className="text showcase__footer">... discover even more features below!</li>
             </ul>
           </div>
