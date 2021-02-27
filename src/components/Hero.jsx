@@ -14,7 +14,7 @@ const Hero = () => {
             <p className="text--main">
               We empower you to take control of your data.
             </p>
-            <p className="text--main">View, collect and edit data easily</p>
+            <p className="text--main">Reki is built for associations that collect and <br className="hero__br"/> analyze data of all kinds.</p>
           </div>
           <a className="button button--link" href="#contact">
             Lets chat <img src={arrow} alt="" />
