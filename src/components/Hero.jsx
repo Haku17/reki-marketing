@@ -16,9 +16,9 @@ const Hero = () => {
             </p>
             <p className="text--main">View, collect and edit data easily</p>
           </div>
-          <button className="button">
+          <a className="button button--link" href="#contact">
             Lets chat <img src={arrow} alt="" />
-          </button>
+          </a>
         </div>
       </div>
     </div>

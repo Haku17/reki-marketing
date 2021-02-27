@@ -1,5 +1,9 @@
 @use "mixins";
 
+.showcase {
+  padding-bottom: 40px;
+}
+
 .showcase__inner {
   width:100%;
   display:flex;
@@ -92,6 +96,15 @@
 
 .showcase__ul {
   margin:0;
+  @include mixins.for-small {
+    margin-bottom:20px;
+  }
+  @include mixins.for-medium {
+    margin-bottom:20px;
+  }
+  @include mixins.for-large {
+    margin-bottom:20px;
+  }
   .text {
     line-height: 60px;
     

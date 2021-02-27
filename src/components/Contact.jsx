@@ -2,7 +2,7 @@ import arrow from "../images/arrow.svg";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <div className="container">
         <div className="contact__box">
           <h3 className="heading contact__heading">Contact us</h3>

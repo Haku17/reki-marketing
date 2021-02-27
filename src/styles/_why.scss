@@ -64,15 +64,15 @@
   max-width: 558px;
   @include mixins.for-small {
     width:100%;
-    margin-top: 14px;
+    margin-top: 24px;
   }
   @include mixins.for-medium {
     width:100%;
-    margin-top: 14px;
+    margin-top: 24px;
   }
   @include mixins.for-large {
     width:100%;
-    margin-top: 14px;
+    margin-top: 24px;
   }
   img {
     width:100%;

@@ -83,6 +83,15 @@
   }
 }
 
+.contact__form .button {
+  @include mixins.for-small {
+    height:48px;
+  }
+  @include mixins.for-medium {
+    height:48px;
+  }
+}
+
 .contact__input {
   display:flex;
   flex-direction: column;
@@ -104,12 +113,14 @@
       box-sizing: border-box;
       margin-bottom:16px;
       min-width:unset;
+      height:48px;
     }
     @include mixins.for-medium {
       width:100%;
       box-sizing: border-box;
       margin-bottom:16px;
       min-width:unset;
+      height:48px;
     }
   }
   label {
@@ -124,6 +135,8 @@
     }
   }
 }
+
+
 
 .contact__footer {
   display:flex;

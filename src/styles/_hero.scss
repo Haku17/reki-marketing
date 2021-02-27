@@ -71,7 +71,8 @@
   }
 }
 
-.hero__textbox button {
+.hero__textbox .button {
+  box-sizing: border-box;
   @include mixins.for-small {
     font-size: 16px;
     height: 48px;
