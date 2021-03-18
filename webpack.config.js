@@ -53,7 +53,8 @@ module.exports = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(), 
     new HtmlWebpackPlugin({
-      template: "./src/index.html"
+      template: "./src/index.html",
+      favicon: "./src/rekiLogo.png"
     })
   ],
 
