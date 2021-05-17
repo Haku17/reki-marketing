@@ -4,14 +4,16 @@ import {
   Route
 } from 'react-router-dom'
 import Navbar from '../components/Navbar'
-import Home from '../pages/home/Home'
-import Features from '../pages/features/Features'
-import Onboarding from '../pages/onboarding/Onboarding'
-import Contact from '../pages/contact/Contact'
+import HomeEn from '../pages/en/home/Home'
+import FeaturesEn from '../pages/en/features/Features'
+import OnboardingEn from '../pages/en/onboarding/Onboarding'
+import ContactEn from '../pages/en/contact/Contact'
+import HomeFi from '../pages/fi/home/Home'
+import FeaturesFi from '../pages/fi/features/Features'
+import OnboardingFi from '../pages/fi/onboarding/Onboarding'
+import ContactFi from '../pages/fi/contact/Contact'
 import "../styles/index.scss"
 import { useState } from 'react'
-
-
 
 const App = () => {
   const [lang, setLang] = useState(() => true)
@@ -20,29 +22,29 @@ const App = () => {
       <Navbar lang={lang} setLang={setLang} />
       <Switch>
         <Route path="/features" exact>
-          <Features />
+          <FeaturesEn />
         </Route>
         <Route path="/onboarding" exact>
-          <Onboarding />
+          <OnboardingEn />
         </Route>
         <Route path="/contact" exact>
-          <Contact />
+          <ContactEn />
         </Route>
         <Route path="/" exact>
-          <Home />
+          <HomeEn />
         </Route>
         {/* Fi routes */}
         <Route path="/fi/features" exact>
-          <Features />
+          <FeaturesFi />
         </Route>
         <Route path="/fi/onboarding" exact>
-          <Onboarding />
+          <OnboardingFi />
         </Route>
         <Route path="/fi/contact" exact>
-          <Contact />
+          <ContactFi />
         </Route>
         <Route path="/fi/" exact>
-          <Home />
+          <HomeFi />
         </Route>
       </Switch>
     </Router>

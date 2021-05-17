@@ -1,4 +1,4 @@
-import chart from '../../images/Reki-charts.png';
+import chart from '../../../images/Reki-charts.png';
 
 const Showcase = () => {
   return (
@@ -15,7 +15,6 @@ const Showcase = () => {
               <li className="text">Dynamic data tables</li>
               <li className="text">Customizable charts</li>
               <li className="text">Notification system</li>
-              <li className="text showcase__footer">... discover even more features below!</li>
             </ul>
           </div>
         </div>

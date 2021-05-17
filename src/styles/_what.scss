@@ -65,6 +65,14 @@
   }
 }
 
+.what__ul {
+  margin:0;
+}
+
+.what__li {
+  padding-top:1rem;
+}
+
 .what__image {
   width:55%;
   @include mixins.for-small {

@@ -1,5 +1,5 @@
-import logo from "../../images/Reki-logo.svg";
-import arrow from "../../images/arrow.svg";
+import logo from "../../../images/Reki-logo.svg";
+import arrow from "../../../images/arrow.svg";
 
 const Hero = () => {
   return (

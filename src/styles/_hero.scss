@@ -28,6 +28,7 @@
 
 .hero__logo {
   margin: 48px 0 0 0;
+  visibility: hidden;
   @include mixins.for-small {
     width:85px;
     margin:24px 0 0 0;

@@ -1,4 +1,4 @@
-import rekiAdmin from "../../images/reki-admin.png";
+import rekiAdmin from "../../../images/reki-admin.png";
 
 const Why = () => {
   return (
