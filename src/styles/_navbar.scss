@@ -1,0 +1,29 @@
+.navbar {
+  position:absolute;
+  top:48px;
+  width:100%;
+  max-width: 1440px;
+}
+
+.navbar ul {
+  display:flex;
+  flex-direction: row-reverse;
+  list-style: none;
+}
+
+.navbar ul li {
+  padding-right:24px;
+  color:#363F49;
+  font-family: "Roboto", sans-serif;
+  font-size:24px;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      color:darken(#363F49, 10%);
+    }
+    &:focus, &:visited {
+      color:#363F49;
+    }
+  }
+}

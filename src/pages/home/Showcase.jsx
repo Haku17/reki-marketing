@@ -1,4 +1,4 @@
-import chart from '../images/Reki-charts.png';
+import chart from '../../images/Reki-charts.png';
 
 const Showcase = () => {
   return (
@@ -6,7 +6,7 @@ const Showcase = () => {
       <div className="container">
         <div className="showcase__inner">
           <div className="showcase__image">
-            <img src={chart} alt="Chart View"/>
+            <img src={chart} alt="Chart View" />
           </div>
           <div className="showcase__list">
             <h3 className="heading showcase__heading">Everything you need, all in one place</h3>

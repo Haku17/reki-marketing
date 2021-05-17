@@ -1,4 +1,4 @@
-import rekiTable from "../images/reki-tables.jpg";
+import rekiTable from "../../images/reki-tables.jpg";
 
 const What = () => {
   return (

@@ -1,4 +1,4 @@
-import rekiAdmin from "../images/reki-admin.png";
+import rekiAdmin from "../../images/reki-admin.png";
 
 const Why = () => {
   return (
@@ -20,7 +20,7 @@ const Why = () => {
               custom data tables and charts.
             </p>
             <p className="text">
-            Our team is always ready to help when you need it.
+              Our team is always ready to help when you need it.
             </p>
           </div>
         </div>

@@ -18,7 +18,8 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: "images/[name][ext][query]"
+    assetModuleFilename: "images/[name][ext][query]",
+    publicPath:'/'
   },
 
   module: {
@@ -66,6 +67,7 @@ module.exports = {
   devtool: "source-map",
   devServer: {
     contentBase:"./dist",
-    hot: true
+    hot: true,
+    historyApiFallback: true
   }
 }

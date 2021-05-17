@@ -1,5 +1,5 @@
-import logo from "../images/Reki-logo.svg";
-import arrow from "../images/arrow.svg";
+import logo from "../../images/Reki-logo.svg";
+import arrow from "../../images/arrow.svg";
 
 const Hero = () => {
   return (
@@ -14,7 +14,7 @@ const Hero = () => {
             <p className="text--main">
               We empower you to take control of your data.
             </p>
-            <p className="text--main">Reki is built for associations that collect and <br className="hero__br"/> analyze data of all kinds.</p>
+            <p className="text--main">Reki is built for associations that collect and <br className="hero__br" /> analyze data of all kinds.</p>
           </div>
           <a className="button button--link" href="#contact">
             Let's improve your workflow <img src={arrow} alt="" />

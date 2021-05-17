@@ -1,5 +1,3 @@
-import arrow from "../images/arrow.svg";
-
 const Contact = () => {
   return (
     <div id="contact" className="contact">
@@ -7,7 +5,7 @@ const Contact = () => {
         <div className="contact__box">
           <h3 className="heading contact__heading">Contact us</h3>
           <p className="text contact__subheading">
-            Start doing business better today! <br className="contact__br"/>
+            Start doing business better today! <br className="contact__br" />
             Send us an email about your current situation.
           </p>
           <a className="contact__link" href="mailto:info@rekiapp.com">info@rekiapp.com</a>
