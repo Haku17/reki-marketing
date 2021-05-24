@@ -1,7 +1,9 @@
+import Header from "./Header";
+
 const Features = () => {
-  return ( 
-    <h2>Features</h2>
-   );
+  return (
+    <Header />
+  );
 }
- 
+
 export default Features;

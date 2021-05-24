@@ -13,13 +13,33 @@ import FeaturesFi from '../pages/fi/features/Features'
 import OnboardingFi from '../pages/fi/onboarding/Onboarding'
 import ContactFi from '../pages/fi/contact/Contact'
 import "../styles/index.scss"
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import useWidth from '../utils/useWidth'
+import HamburgerNavbar from './HamburgerNavbar'
 
 const App = () => {
-  const [lang, setLang] = useState(() => true)
+
+  const { width } = useWidth()
+  const [lang, setLang] = useState(true)
+
+
+  useEffect(() => {
+    const splitUrl = window.location.pathname.split('/')
+    splitUrl.map((piece) => {
+      if (piece === "fi") {
+        console.log('fi!')
+        setLang((lang) => !lang)
+      }
+    })
+    return () => {
+      console.log('app cleanup')
+    }
+  }, [])
+
+
   return (
     <Router>
-      <Navbar lang={lang} setLang={setLang} />
+      {width > 1024 ? <Navbar initLang={lang} setLang={setLang} /> : <HamburgerNavbar initLang={lang} setLang={setLang} />}
       <Switch>
         <Route path="/features" exact>
           <FeaturesEn />

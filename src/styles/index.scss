@@ -1,11 +1,28 @@
+// Normalize
 @use "../../node_modules/normalize.css/normalize.css";
+// Global styles
 @use "global";
 @use "navbar";
-@use "hero";
-@use "showcase";
-@use "features";
-@use "feature";
-@use "what";
-@use "why";
-@use "who";
-@use "contact";
+// Home page
+@use "./home/hero";
+@use "./home/showcase";
+@use "./home/features";
+@use "./home/feature";
+@use "./home/what";
+@use "./home/why";
+@use "./home/who";
+@use "./home/contact";
+// Features page
+@use "./features/header";
+@use "./features/upload";
+@use "./features/tablescharts";
+@use "./features//security";
+@use "./features/online";
+@use "./features/language";
+@use "./features/support";
+// Onboarding page
+@use "./onboarding/heading";
+@use "./onboarding/meeting";
+@use "./onboarding/transition";
+@use "./onboarding/beta";
+@use "./onboarding/launch";
