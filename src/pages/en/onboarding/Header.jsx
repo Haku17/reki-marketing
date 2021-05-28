@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <h3 className="onboarding__heading">
+    <h3 className="heading onboarding__heading">
       Onboarding
     </h3>
   )

@@ -33,16 +33,16 @@ const HamburgerNavbar = ({ initLang, setLang }) => {
       <div className={menuState ? "hamburgerNavbar__container" : "hamburgerNavbar__container--closed hamburgerNavbar__container"} onClick={e => e.stopPropagation()}>
         <ul className="hamburgerNavbar__ul">
           <li>
-            <Link to={lang ? "/contact" : "/fi/contact"}>Contact</Link>
-          </li>
-          <li>
-            <Link to={lang ? "/onboarding" : "/fi/onboarding"}>Onboarding</Link>
+            <Link to={lang ? "/" : "/fi/"}>Home</Link>
           </li>
           <li>
             <Link to={lang ? "/features" : "/fi/features"}>Features</Link>
           </li>
           <li>
-            <Link to={lang ? "/" : "/fi/"}>Home</Link>
+            <Link to={lang ? "/onboarding" : "/fi/onboarding"}>Onboarding</Link>
+          </li>
+          <li>
+            <Link to={lang ? "/contact" : "/fi/contact"}>Contact</Link>
           </li>
         </ul>
         <div className="hamburgerNavbar__lang">
