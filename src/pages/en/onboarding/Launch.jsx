@@ -3,12 +3,9 @@ import React from 'react'
 export default function Launch() {
   return (
     <div className="container">
-      <h3 className="heading">Full launch and enjoy!</h3>
+      <h3 className="heading">Launch!</h3>
       <p className="text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit sit eaque totam? Laboriosam, ducimus quas.
-      </p>
-      <p className="text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, ipsum?
+        This is it, the time has come and we fully launch your Reki system! This means all of your users are onboard and you can enjoy your new productive and error-free work day.
       </p>
     </div>
   )

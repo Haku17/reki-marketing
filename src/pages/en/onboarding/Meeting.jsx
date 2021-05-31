@@ -5,10 +5,7 @@ export default function Meeting() {
     <div className="container">
       <h3 className="heading">Initial Meeting to discuss your situation and requirements</h3>
       <p className="text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo commodi iure molestias error cupiditate enim maxime? Dolorum unde harum temporibus officiis accusantium nemo porro natus libero, esse, eos assumenda incidunt corrupti perferendis cum molestiae beatae quidem aperiam quisquam possimus! Quod ab accusantium possimus! Praesentium, et.
-      </p>
-      <p className="text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque necessitatibus repellendus, ducimus error quod consectetur quo exercitationem porro veniam repellat quasi suscipit.
+        The process starts with our first meeting, either in person or virtually. We will discuss your current situation and discover all the ways Reki can help. We want to hear about your most common tasks, statistics, and other requirements that you need to complete regularly. Once we have a good understanding of your unique situation we will start to build a beta version of your new system.
       </p>
     </div>
   )
