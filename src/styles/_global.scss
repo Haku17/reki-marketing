@@ -13,6 +13,10 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -46,13 +50,13 @@ body {
     font-size: 24px;
   }
   @include mixins.for-medium {
-    font-size:24px;
+    font-size: 24px;
   }
   @include mixins.for-large {
-    font-size:48px;
+    font-size: 48px;
   }
   @include mixins.for-xlarge {
-    font-size:48px;
+    font-size: 48px;
   }
 }
 
@@ -137,5 +141,5 @@ body {
 
 .button--link {
   text-decoration: none;
-  width:max-content;
+  width: max-content;
 }

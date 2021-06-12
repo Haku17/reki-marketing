@@ -3,6 +3,7 @@
 // Global styles
 @use "global";
 @use "navbar";
+@use "hamburger_navbar";
 // Home page
 @use "./home/hero";
 @use "./home/showcase";
@@ -27,4 +28,4 @@
 @use "./onboarding/beta";
 @use "./onboarding/launch";
 // Contact page
-@use "./contact/contatct_page"
+@use "./contact/contatct_page";

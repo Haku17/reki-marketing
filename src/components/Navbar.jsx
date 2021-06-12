@@ -1,37 +1,68 @@
-import { Link } from "react-router-dom"
-import logo from "../images/Reki-logo.svg"
+import { NavLink } from "react-router-dom";
+import logo from "../images/Reki-logo.svg";
 import useLang from "../utils/useLang";
 
-
-
 const Navbar = ({ initLang, setLang }) => {
-
-  const { lang, handleLang } = useLang(initLang, setLang)
+  // lang is bool => true:english; false:finnish //
+  const { lang, handleLang } = useLang(initLang, setLang);
 
   return (
     <div className="navbar">
       <img src={logo} alt="Reki Logo" className="navbar__logo" />
       <ul>
         <li>
-          <Link to={lang ? "/contact" : "/fi/contact"}>Contact</Link>
+          <NavLink
+            to={lang ? "/contact" : "/fi/contact"}
+            activeClassName="navbar__active_link"
+          >
+            Contact
+          </NavLink>
         </li>
         <li>
-          <Link to={lang ? "/onboarding" : "/fi/onboarding"}>Onboarding</Link>
+          <NavLink
+            to={lang ? "/onboarding" : "/fi/onboarding"}
+            activeClassName="navbar__active_link"
+          >
+            Onboarding
+          </NavLink>
         </li>
         <li>
-          <Link to={lang ? "/features" : "/fi/features"}>Features</Link>
+          <NavLink
+            to={lang ? "/features" : "/fi/features"}
+            activeClassName="navbar__active_link"
+          >
+            Features
+          </NavLink>
         </li>
         <li>
-          <Link to={lang ? "/" : "/fi/"}>Home</Link>
+          <NavLink
+            exact
+            to={lang ? "/" : "/fi/"}
+            activeClassName="navbar__active_link"
+          >
+            Home
+          </NavLink>
         </li>
       </ul>
       <div className="navbar__lang">
-        <button className="navbar__langBtn" onClick={handleLang} disabled={lang}>En</button>
+        <button
+          className="navbar__langBtn"
+          onClick={handleLang}
+          disabled={lang}
+        >
+          En
+        </button>
         <span className="navbar__span--divide">/</span>
-        <button className="navbar__langBtn" onClick={handleLang} disabled={!lang}>Fi</button>
+        <button
+          className="navbar__langBtn"
+          onClick={handleLang}
+          disabled={!lang}
+        >
+          Fi
+        </button>
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;
